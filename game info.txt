@@ -1,0 +1,273 @@
+Game Title; Into the Shadows
+
+Narrative:
+
+The story takes place in an apocalyptic era, where humanity is near to the end, while the remains of the humanity has became a savage. Everyone, who survived the atomic bombs that made a fallout and shaped the world into a wasteland, do not trust anyone aside from themselves and their family or their closest friend.
+
+You was outdoors, hunting for food and anything worth scavaging, as you and your group were starving, and did not have eat any food in for many days.
+
+While you were scavanging, you came across a tent in a dead forest, with no sign of natural foliage or savage people, you decided to investigate the camp, until, you got caught in a snare trap, pulling you up to a tree branch.
+
+A few seconds after, you got knocked out of conscious by a unidentified person. You woke up in an abandoned building. Floor creaking, ceiling crumbling, dust surrounding the room. You start to analyse the room to see what you can use to cut the rope ties. After a minute, you find a sharp but broken metal railing that you use to cut the ties and make your way out...
+
+Game features:
+- Randomised enemies throughout the game.
+- Randomised reward items.
+- Randomised enemy types depending on the time of day.
+- Randomised chances of spawning a container that contains rewards.
+- Fear variable that increases or decreases depending on the action you perform, inflicting debuffs overtime.
+- Player equipment and weapons.
+- Player inventory containing healing items, some buffs the player permanently.
+- Level up system.
+- Decisions affecting the story.
+- Few puzzles.
+- BGM and other sounds.
+- Options that allows the player to configure few things of the game.
+- Game Journal; saves quotes that the player has seen in-game, thoughts, or clues to their journal.
+- Game statistics when player has finished playing.
+- Enemy Bio.
+
+Player Stats [Default]:
+Max Health - 100 HP
+Health - 100 HP
+ATK - 1.7
+DEF - 1.25
+
+Player Debuffs:
+Fear - Lowers DEF, makes player confused with puzzle solution.
+Stomach Cramps - Lowers HP, Lowers DEF.
+Lactose Intolerance - Causes the player to crap his own pants, may disgust enemies. Lowers Max HP by 5.
+Alcoholic Rush - Deal 2x damage, becomes completely resistant to fear.
+
+Player Consumables:
+Dirty Water - Increases HP by 15, may cause Stomach Cramps.
+Chocolate Mouse - Increases HP by 40.
+Bag of Haribos JellyBabies - Increases HP by 55, increase DEF by .75.
+Bag of Cooked but Expired Snails - Increases ATK by 1.2, Increases Max HP by 15, and Increases HP by 20.
+Expired Can of Red Bull - Increases ATK by +1 permanently.
+Whisky - Lowers FEAR and removes debuffs.
+
+Enemies:
+Engorged Beetles
+	-> Bite; Bites the player.
+	-> Flies and Hisses: Scares the player, trying to increase his fear meter.
+	-> Sprinkle Some Poop: Flies around the player and drops some dropplings that the player insinuate that it may be some chocolate.
+
+Slitherman
+A monster, with a human body. Both of its legs are attached to each other, looks like they were sown together. It slithers and can possibly lunge at the player.
+	-> Scratch; Uses its long metal claws to attack the player. Can cause the player to bleed.
+	-> Lunge; Lunges at the player, causing the player to get knocked down. Deals a lot of damage.
+	-> Wail; Wails out loud, restoring few HP and frightens the player. Can cause the player to be dazed for a turn.
+
+The Woodchopper
+Another monster, walks and limps, has human body, but has been decapitated. The head has been replaced with an axe's head but larger in width and looks like skin has been stretched out to cover it.
+	-> Single Slice; Swipes its head at the player.
+	-> Double Slice; Swipes its head at the player, twice.
+	-> Grapple; Attempts to grab the player to perform its instant kill.
+	-> Chop Chop; Attempts to power up its attack to instant kill the player, by chopping its torse in half.
+
+???: Guard
+A Guard.
+	-> Melee; Hits the player with the melee weapon.
+	-> Shoot; Deals more damage by shooting at the player.
+
+Levels:
+Most of the game will take place in the building.
+
+- Basement (starting location).
+	- Gains and equips iron pipe weapon.
+
+- Laundry Room.
+	- Narrates "As you were walking up the stairs, you heard painful screams and wild animalistic noise. As you get to the top, you briefly see a bloodied man being dragged by a four legged creature, who briefly looked like a human. You see a detached arm with three claw marks, under it, is a pool of blood. There are washing machines around the room, with clothing tosses everywhere, mostly bloody.
+
+	A sign above you, states you are currently in the Laundry Room; which you insinuates that this may be some sort of prison."
+
+	"What do you want to do?"
+
+	 - [IF STATEMENT] Player take some time to move, will cause another event to occur, this is intentional.
+	 	-> Player hear the WWII like sirens going off, while the player panics [SOUND PLAYS]. Player automatically retreats to the basement due to fear and unable to handle the spontaneousity of the situation. Fear increases.
+	 		-> [CHOICE SELECTION] Player moves back up, then sees enemies; specifically fat chunky beetles, who looks aggrevated. Forces Player to pick an option between: A. [RNG] Distract the beetles for the player to run, or B. [INITIATES BATTLE] Approach and start attacking the Beetles.
+	 	 		-> [CHOICE SELECTION] If player goes with option A, they will have the opportunity to stealth attack the beetles to deal 2x damage and provides them with an extra attack.
+	 	 			-> If stealth attacked, initiate battle.
+	 	 				-> [BATTLE REWARDS] 25xp.
+	 	 				-> [CHOICE SELECTION] Once the enemies has been defeated, the player is able to:
+	 	 					-> Go to the Guard Post.
+	 						-> Read the near-illegible writing on the wall.
+	 							-> Writing says "There's no escape once you have been trapped in Hell. They are everywhere; killing everyone who has committed sins, who is negative, who is depressed, who is classed as "filth" by having medical conditions. But, who are they? Where did they come from?"
+	 								-> Adds this to the journal, along with a thought next to it, stating "Seems like I am not the only one inside this place. I better be careful and keep an eye out."
+	 						-> [IF RND CONDITION MEETS]	Look around for a container, contains useful items.
+	 	 			-> If ran away then...
+	 	 				-> Go to the Guard Post by following the signs (Player can go back).
+	[IF PLAYER IS QUICK ENOUGH]
+	 - Go to the Guard Post by following the signs.
+	 - Read the near-illegible writing on the wall.
+	 	- Writing says "There's no escape once you have been trapped in Hell. They are everywhere; killing everyone who has committed sins, who is negative, who is depressed, who is classed as "filth" by having medical conditions. But, who are they? Where did they come from?"
+	 		-> Adds this to the journal, along with a thought next to it, stating "Seems like I am not the only one inside this place. I better be careful and keep an eye out."
+	 - [IF RND CONDITION MEETS]	Look around for a container, contains useful items.
+
+
+ - Guard Post.
+ 	-> Narrates "You are now in The Guard Post. As you thought, there must have been someone in the Guard Post, that could help you or explain what is going on or even, how did you wind up in this place? But there are dead bodies, everywhere. Trail of blood are everyone, but one trail of blood directs your attention to what is called the "Weapons Room", as clearly labelled on top of the door."
+ 		-> Print out "Press any key to open the door...".
+ 			-> [PLAYS SOUND] Keycard reader beeps.
+ 			-> Narrates "You need the Level 3 Clearence Keycard to get through. As you sigh in frustration, you realised that the bottom of the door has skull bone fragments, indicating someone's skull has practically exploded when the door was forced closed onto their skull. The thought horrifies you."
+ 				-> Increase the fear meter.
+ 				-> Enables the player to check for keycards on any dead bodies.
+ 			-> [CHOICE SELECTION] What would you like to do?
+ 				A. Peep into the "Weapons Room" through the tiny window on the door.
+ 					-> Narrates "There seems to be empty ammo boxes on the floor, and from the looks of it; a handgun. However, you cannot be sure, as the light is rapidly flickering."
+ 						-> Add a note in the journal - "The Weapons Room has a weapon that can help significantly, it's best to look for the Level 3 Clearence Keycard."
+ 				B. Check the bodies for any keycard.
+ 					-> Implement AnsiConsole Status to simulate some checking.
+ 						-> Prints "There were no keycard on any of the bodies, however you have found [RANDOM REWARD] on a body."
+ 							-> [RANDOM REWARD] Water Bottle, Snickers Bar, Wrapper.
+ 				C. Observe the room for anything else.
+ 					-> Player finds a switch that seems to opened something in the Laundry Room, sounds like a door?
+ 					-> [CHOICE SELECTION - IF OTHER OPTIONS HASN'T BEEN EXHAUSTED] Would you like to go back to the Laundry Room? Yes or No.
+ 						-> If no, then display other options.
+
+ -> Laundry Room [Rev 2]
+ 	-> Narrates "As you are making your way back to the Laundry Room, you hear something growl while producing an irritating sensitive sound, as if someone is scratching a metal fence with nails."
+ 		-> [SOUND PLAYS] Metal fence being scratched with nails.
+ 	-> Continue narrating "You are in the Laundry Room again, and it seems like the large doors leading to the Canteen and Visitor Center has been opened."
+ 		-> [CHOICE SELECTION]	Where do you want to go?
+ 			-> Canteen.
+ 				-> Player will encounter a dying officer, who will expose to the player that there is a cult inside the prison.
+				-> Officer starts to lose conscious and will start mumbling about the passcode to the entrance, allowing the player to leave. Passcode is: 791754.
+				-> Passcode is scrambled more when the player has higher fear.
+					-> Enemy unexpectedly, sneaks up behind and kills the officer, the Level 1 Clearance Keycard drops on the floor but requires player to defeat the enemy.
+ 			-> Visitor Center.
+ 				-> Connected to Extrance, the way out.
+ 				-> [CHOICE SELECTION] What would you like to do?
+ 					-> Look around.
+ 						->  Leaflet on one of the tables, gives some information about the cult's objective.
+ 							-> If picked up, the journal will be updated.
+ 					-> Go to Entrance.
+ 						-> Entrance
+ 								-> Narrate "The exit is up ahead, but it is blocked off by a shutter; there seem to be some sort of advanced security system in place when the visiting hours are up. There is:
+ 								Power needs to be on, that powers the shutter."
+ 									-> Once the power is back up and the player goes back; the player is told that they need:
+										-> Requires three wires to restore power to the keypad.
+										-> Keycode required [IF they have yet to visit the Canteen].
+										-> Level 3 Clearence Keycard required.
+									-> Player needs to go back.
+
+
+[IF POWER IS NOT ON]
+
+ -> Entrance.
+ 	-> Player is forced to go back.
+ 	-> If the Player goes back to the Laundry Room.
+ 		-> Laundry Room.
+ 			-> Player hears someone talking on a radio. Player sees an unidentified armed guard, and must decide whether to attack or wait it out.
+ 			-> [CHOICE SELECTION] As you are making your way to the Laundry Room, you hear someone talking on the radio. They seem to be alone, what do you want to do?
+ 				-> Stealth Attack.
+ 					-> [RANDOMISED CHANCE] Damages the unidentified guard, and gives yourself an extra bonus attack.
+ 						-> Initiated Battle.
+ 							-> After defeating the guard, you examine the body, and find a document from the guard. Stating that "We must purge the sin from these unfortunate lost souls, and let them reincarnate into a holy body that is cleansed from sin. Bring the three unfortunate souls to the Torture Chamber to prepare them for the ultimate absolution: death in the Execution Chamber."
+ 								-> This will add an entry in the player's diary: "If I am one of the three, who is the other two people that is holed up in this prison? Maybe I should go find them? Maybe not, as they may not cooperate with me to escape."
+ 									-> Someone will speak from the Radio, calling the dead guard. The player will panic and will not answer the radio.
+ 										-> Cult becomes suspicious, they send reinforcement that will be patrolling random rooms.
+ 				-> Wait until the Guard has finished analysing the area.
+ 					-> Player hides in the Visitor Center until the Guard disappears.
+ 						-> [RANDOMISED CHANCE] Player drops something causing the Guard to be on an alert and check the source of the noise.
+ 							-> [RANDOMISED CHANCE] Player may get caught by the Guard, or they may succeed in hiding.
+ 								-> [CONDITION] If Player gets caught, they must defeat the Guard.
+ 									-> Initiates Battle.
+ 										-> After the battle, the cult becomes alerted, sends reinforcement.
+ 								-> [CONDITION] If Player succeeds in hiding, they can move to the Laundry Room.
+
+ 				-> Laundry Room.
+ 					-> Player arrives in the Laundry Room, and hears doors unlocking and being shut. Suggesting more of the doors have been unlocked and is now accessible.
+ 					-> [CONDITIONAL] If the Player have yet to go the Canteen, narrate "You may have seen the Canteen room, but have yet to go there. Would you like to go there now before proceeding further?"
+ 						-> Yes.
+ 							-> Goes to the Canteen.
+ 						-> No.
+ 							-> [CHOICE SELECTION] From the signs that you can see, the doors to the Cell Block A and Cell Block B are now unlocked. Which Cell Block would you like to go to?
+ 								-> Cell Block A.
+ 									->	Cell 1-A
+									->	Cell 2-A
+									->	Cell 3-A
+									->	Cell 4-A
+									-> randomise where the wire will be, some may contain rewards, some may have an enemy.
+									-> Required Level 1 Clearance Keycard.
+									-> Ask player if they want to open the cells or head in the Solitary.
+										-> Solitary.
+										-> Open Cells.
+
+ 								-> Cell Block B.
+ 									->	Cell 1-B
+									->	Cell 2-B
+									->	Cell 3-B
+									->	Cell 4-B
+									-> randomise where the wire will be, some may contain rewards, some may have an enemy.
+									-> Requires Level 2 Clearance Keycard.
+									-> Ask player if they want to open the cells or head in the Solitary.
+										-> Solitary.
+										-> Open Cells.
+
+											-> Solitary.
+												->	A severely injured friend in your group has been placed in a Solitary, required Level 2 Clearence Keycard.
+													->	If the player has the keycard, he can go in. Friend is placed on a trap. Player tries to rescue his friend, but unable to, resulting in a gruesome death.
+														->	Player investigate the body to see if he has anything on him. Player finds a device the friend made, and calls "Noisemaker", used to make noise and distract anyone within proximity. Will be useful to get into the Rec Room.
+															->	Player gets out of from the Solitary room that his friend was at, coincidentally, someone's blood is on the wall in front of the player. Two arrows, each has a destination name:
+																-> Right Arrow: Execution Room.
+																	->	Execution Rooms.
+																		-> Another friend in your group will be strapped into a bloodied chair, with several knives impaled at the friend. The friend is unconcious, but you have the chance to rescue him.
+																		-> Requires Level 2 Clearance Keycard to enter the room.
+																			-> Once inside, you see your friend severely injured, but require immediate first aid, you need to get into the infirmary to get: Bandages and First Aid.
+
+																				-> Infirmary.
+																					-> Requires Level 1 Clearance Keycard.
+																					-> Contains first aid and bandages.
+																					-> Contains few recovery items.
+																					-> Contains food chain puzzle, that the solution to it is in the same room.
+																				
+
+																					-> When completed, you assist your friend to the Laundry Room as you know a good hiding place, however, you hear some chatter and get ambushed by the unidentified group of people.
+																						-> They are dressed up with some unknown protective gear, with gas masks, equipped with advanced military weapons like Tactical Pistols, Assault Rifle, and Assault Shotguns.
+																						-> They knock you and your friend out. Take you to the Torture Room.
+
+																							-> Torture Room
+																								-> Continuation from the Execution Room. You wake up strapped to an operating bed, while your friend is on the other operating bed. You look around and see giant circular saw, drills, chainsaws, all bloodied. Stains of blood surround the room, and the operating beds.
+																								-> The same unidentified people come, with a woman, who look like the mayor of the town, back when there was a civilisation.
+																								-> Introduces herself and her peers as a part of a cult; who are named "The Ordinary" - made and designed to wash away sin by bloodletting and committing genocide to people who are unhealthy, unfit, and have medical issues. The cult believes God has punished these people for their wrongdoing and sins that they have committed, however, they continue to do more evil that they have cursed everyone in the town.
+																								-> The cult leader elaborates how she firmly believes the player is sinful and deserves to be punished, and that the player was caught by one of the Guards. She also believes the same thing about your friend but in much more of a spiteful manner.
+																								-> The Guards flip over the operating tables, making the player and the friend face upwards as if they were standing. The cult leader dismissed the guards, and proceeded to grab the drill, turned it on and faced me toward my friend.
+																								-> Cult leader went to the friend, and proceeded to drill into the friend's eye.
+																								-> Friend dies, and the player was going to be next, until the Guards came in to alert the cult leader to evacuate as the "monsters" were seen nearby and that they need to go.
+																								-> She goes, you manage to unstrap yourself. You needed to get out, from now on, the monster spawn frequency increases.
+																									-> The Rec Room is located upstairs, while the stairs is at the end of the corridor (if the player has yet to go there).
+																									-> If the player has been to the Rec Room, they would need to find the rest of key items.
+																									-> Enemies will spawn more.
+
+
+																-> Left then Straight Arrow: Rec Room.
+																	-> Rec Room.
+																		-> Has been turned in a "safe room" for the unidentified group of people who is using the prison as their base. Once discovered, the unidentified group of people will be patrolling the prison, if they detect something is off, they will set up traps or will survillance the area.
+																		-> Contains the Level 3 Clearence keycard.
+																		-> Heavily guarded.
+																		-> Contains weapons; assualt rifle, bulletproof vest.
+																			-> Can use the Noisemaker to throw downstairs, drawing the attention from the Guards.
+																		-> Power can be restored within the Rec Room, by using the fuel found in the showers area.
+																		-> Contains the map, informing the player the locations of the wires, keycard, and the keycode.
+																		-> Keycode location will not be revealed if the player has already been inside of the Canteen.
+
+													-> If the player does not have the keycard, player needs to go to the Showers Area.
+														-> Showers Area.
+															-> Player sees the shower area and took a very small break, trying to gather his thoughts. He heads towards the sink and tried to open the tap to splash some water on his face. Only for blood to pour out from the tap, frightens the player, before the player shuts the tap valve.
+																-> Player looks in the mirror and sees someone's torso coming towards the player and moans "Help me...".
+																	-> Player is petrified, and hides as the player hears someone else is coming, probably a guard. The guard sees the above the torso of a person, and eliminates it.
+																		-> Player can either investigate what it was, or explore around the room.
+																			-> Exploring the room causes the player to see a fuel can, that some fuel. Player thinks its useful to keep a hold of it.
+																				-> Player gets jumpscared by a monster, has a human body, arms and legs, but with a head of an axe's head.
+																					-> Player engages in a battle with it, due to nearby enemies, the player must decide between using a melee or a gun. Gun will attract other nearby enemies. Player defeats the enemy and decides to investigate the body that the guard eliminated.
+																						-> Player discovers the body was of an prison officer, who's name is illegible on his ID card. He carries a Level 2 Clearance Keycard.
+																							-> Player goes back to the Solitary to where the Player's friend is at.
+
+
+- Weapons Room.
+	- Contains stungun, ammo for stungun, and protective vest.
+	- Contains the last piece of wire.
+
+

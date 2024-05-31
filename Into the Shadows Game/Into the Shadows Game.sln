@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Into the Shadows Game", "Into the Shadows Game.csproj", "{653BCD0D-F852-4109-B9BF-8E75D04A938E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{653BCD0D-F852-4109-B9BF-8E75D04A938E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{653BCD0D-F852-4109-B9BF-8E75D04A938E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{653BCD0D-F852-4109-B9BF-8E75D04A938E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{653BCD0D-F852-4109-B9BF-8E75D04A938E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F1352AF-838F-418D-A073-99178CFD8496}
+	EndGlobalSection
+EndGlobal
