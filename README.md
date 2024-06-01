@@ -21,4 +21,4 @@ Duplicated the private repo, but ensured it's up to scratch in the context of pr
 
 ## Uses the following libraries
 + [NAudio](https://github.com/naudio/NAudio)
-+ [SpectreConsole]([https://spectreconsole.net/](https://github.com/spectreconsole/spectre.console)
++ [SpectreConsole](https://github.com/spectreconsole/spectre.console)
