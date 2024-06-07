@@ -24,3 +24,4 @@ Duplicated the private repo, but ensured it's up to scratch in the context of pr
 ## Uses the following libraries
 + [NAudio](https://github.com/naudio/NAudio)
 + [SpectreConsole](https://github.com/spectreconsole/spectre.console)
++ [.NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
